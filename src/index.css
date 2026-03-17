@@ -140,6 +140,13 @@ li button {
   transition: color 0.2s, border-color 0.2s;
 }
 
+@media (max-width: 768px) {
+  #delete-button, #edit-button {
+    width: auto;
+    padding: 4px 8px;
+  }
+}
+
 #delete-button {
   width: 150px;
   height: 50px;
