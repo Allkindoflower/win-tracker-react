@@ -120,6 +120,7 @@ li {
 
 li span {
   flex: 1;
+  word-break: break-word;
 }
 
 li .buttons {
