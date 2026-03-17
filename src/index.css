@@ -20,7 +20,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 48px;
-  zoom: 1.5;
+}
+
+@media (max-width: 768px) {
+  #root {
+    zoom: 1;
+  }
 }
 
 h1 {
