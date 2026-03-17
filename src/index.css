@@ -22,12 +22,6 @@ body {
   gap: 48px;
 }
 
-@media (max-width: 768px) {
-  #root {
-    zoom: 1;
-  }
-}
-
 h1 {
   font-size: 60px;
   font-weight: 700;
@@ -48,7 +42,7 @@ p {
 }
 
 /* SaveWin */
-#save-win-con button{
+#save-win-con button {
   width: 75%;
   display: block;
   margin: 0 auto;
@@ -68,11 +62,9 @@ input[type="text"] {
   transition: border-color 0.2s ease;
   display: block;
   margin: 0 auto;
-
 }
 
 input[type="text"]:focus {
-  width: 75%;
   border-color: #7c5cbf;
 }
 
@@ -95,7 +87,6 @@ button:hover {
 button:active {
   transform: scale(0.97);
 }
-
 
 ul {
   width: 100%;
@@ -140,19 +131,12 @@ li button {
   transition: color 0.2s, border-color 0.2s;
 }
 
-@media (max-width: 768px) {
-  #delete-button, #edit-button {
-    width: auto;
-    padding: 4px 8px;
-  }
-}
-
-#delete-button {
+.delete-button {
   width: 150px;
   height: 50px;
 }
 
-#edit-button {
+.edit-button {
   width: 150px;
   height: 50px;
 }
@@ -163,13 +147,13 @@ li button {
   margin: 0 auto;
 }
 
-#delete-button:hover {
+.delete-button:hover {
   color: #ff6b6b;
   border-color: #ff6b6b;
   background: transparent;
 }
 
-#edit-button:hover {
+.edit-button:hover {
   color: yellow;
   border-color: yellow;
   background: transparent;
@@ -179,6 +163,43 @@ li button {
   color: green;
   border-color: green;
   background: transparent;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  body {
+    padding: 32px 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+    letter-spacing: -0.5px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  #save-win-con button {
+    width: 100%;
+  }
+
+  li {
+    flex-wrap: wrap;
+  }
+
+  li .buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .delete-button,
+  .edit-button {
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+  }
 }
 
 @keyframes fadeIn {

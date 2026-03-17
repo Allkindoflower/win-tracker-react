@@ -23,11 +23,11 @@ const WinField = ({ wins, deleteWin, editWin }) => {
             </>
           : <>
               <span>{win}</span>
-              <button id="edit-button"onClick={() => {
+              <button class="edit-button"onClick={() => {
                 setEditingIndex(index)
                 setEditText(win)
               }}>Edit</button>
-              <button id="delete-button"onClick={() => deleteWin(index)}>Delete</button>
+              <button class="delete-button"onClick={() => deleteWin(index)}>Delete</button>
             </>
         }
       </li>
