@@ -8,7 +8,7 @@ const SaveWin = ({addWin}) => {
 
     return <div id="save-win-con">
 
-        <input value={currentWin} required type="text" 
+        <input autoFocus value={currentWin} required type="text" 
         onChange={(e) => setCurrentWin(e.target.value)}
         onKeyDown={(e) => {
         if (e.key === "Enter" && currentWin !== "") {

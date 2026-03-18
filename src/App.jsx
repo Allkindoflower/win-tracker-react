@@ -5,7 +5,6 @@ import SaveWin from './components/savewin'
 import Title from './components/title'
 import WinField from './components/winfield'
 
-//TODO: On mobile, fix text getting curled up
 
 const App = () => {
 
